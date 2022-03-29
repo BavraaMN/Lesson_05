@@ -1,15 +1,14 @@
-const firstinteger=Number(prompt("Первый номер чтобв найти наибольший общий делитель?", ""));
-const secondinteger=Number(prompt("Второй данный чтобы найти наибольший общий делитель?", ""));
+let firstinteger_=Number(prompt("Первый номер чтобв найти наибольший общий делитель?", ""));
+let secondinteger_=Number(prompt("Второй данный чтобы найти ?", ""));
 
-   while (firstinteger != secondinteger) 
+firstinteger_=Math.abs(firstinteger_);
+secondinteger_=Math.abs(secondinteger_);
+
+   while (secondinteger_) 
    {
-      if ( firstinteger > secondinteger ) 
-     {
-       firstinteger = firstinteger -secondinteger;
-     }
-    else 
-     {
-        secondinteger = secondinteger - firstinteger;
-     }
+       let temp=secondinteger_;
+       secondinteger_=firstinteger_ % secondinteger_;
+       firstinteger_=temp;
    }
-   console.log(`наибольший общий делитель ${firstinteger}`)
+   console.log(`наибольший общий делитель ${firstinteger_}`)
+   

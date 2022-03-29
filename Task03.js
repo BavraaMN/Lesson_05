@@ -1,6 +1,6 @@
-const mytext= prompt("Выводите строк ?", "");
+const myREVtext= prompt("Выводите строк ?", "");
 
-const reversedstring=mytext.split("").reverse().join("");
+const reversedstring=myREVtext.split("").reverse().join("");
 console.log(reversedstring);
 
  /* var newString = "";   // Step 2. Create the FOR loop

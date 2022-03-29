@@ -1,5 +1,6 @@
-const totalcost= prompt("Общая сумма корзины", "");
-const totalproduct= prompt("Количество товаров в корзине", "");
+
+let totalcost= Number(prompt("Общая сумма корзины", ""));
+const totalproduct=Number(prompt("Количество товаров в корзине", ""));
 
 const mypromokod= prompt("Промокод", "");
 
@@ -15,6 +16,7 @@ const mypromokod= prompt("Промокод", "");
      {
         totalcost=totalcost*0.9;
      }
+    else
    if (mypromokod=="G3H2Z1" && totalcost>2000)
      {
         totalcost=totalcost-500;
